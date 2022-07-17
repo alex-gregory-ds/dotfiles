@@ -36,12 +36,18 @@ if (has("autocmd") && !has("gui_running"))
 endif
 
 syntax on
-colorscheme onedark
 
 " highlight DiffAdd ctermbg=22 ctermfg=None
 " highlight DiffDelete ctermbg=52 ctermfg=None
 " highlight DiffChange ctermbg=17 ctermfg=None
 " highlight DiffText ctermbg=53 ctermfg=None
+
+" Plugins
+call plug#begin('~/dotfiles/dotfiles/.config/nvim/plugged')
+    Plug 'airblade/vim-gitgutter'
+call plug#end()
+
+colorscheme onedark
 
 " Settings for RST files
 augroup RestructuredText
