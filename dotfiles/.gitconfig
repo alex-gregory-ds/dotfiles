@@ -1,0 +1,39 @@
+[alias]
+    # Concise log
+    lo = log --pretty='%Cred%h%Creset - %s %Cgreen[%ar] %b' --reverse -n 10
+
+    # Concise status
+    st = status -s
+
+    # List modified files
+    sh = show --name-status
+
+    # Diff to show the contents of a commit
+    dtc = "!f() { git difftool \"$1^\" \"$1\"; }; f"
+
+    dt = difftool
+
+[user]
+	email = alex.gregory1@outlook.com
+	name = Alex Gregory
+
+[core]
+	editor = nvim
+	pager = 
+
+[color]
+	ui = true
+    status = always
+
+[difftool]
+    prompt = true
+
+[diff]
+    tool = nvimdiff
+
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+
+[color "diff"]
+	new = green normal bold
+
