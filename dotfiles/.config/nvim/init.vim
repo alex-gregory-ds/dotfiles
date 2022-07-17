@@ -44,6 +44,7 @@ syntax on
 
 " Plugins
 call plug#begin('~/dotfiles/dotfiles/.config/nvim/plugged')
+    Plug 'joshdick/onedark.vim'
     Plug 'airblade/vim-gitgutter'
 call plug#end()
 
