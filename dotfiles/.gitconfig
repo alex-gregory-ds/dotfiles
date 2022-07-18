@@ -1,6 +1,6 @@
 [alias]
     # Concise log
-    lo = log --pretty='%Cred%h%Creset - %s %Cgreen[%ar] %b' --reverse -n 10
+    lo = log --pretty='%C(yellow)%h%Creset - %s %Cgreen[%ar]%Creset' --reverse -n 10
 
     # Concise status
     st = status -s
