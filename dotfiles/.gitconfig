@@ -37,3 +37,8 @@
 [color "diff"]
 	new = green normal bold
 
+[pager]
+	branch = false
+    show = false
+    log = false
+
