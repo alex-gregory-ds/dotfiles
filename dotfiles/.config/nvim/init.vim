@@ -1,14 +1,4 @@
-set number           " Line numbers
-set mouse=a          " Enable mouse clicking
-set expandtab        " Expand tabs into spaces
-set shiftwidth=4     " Indents will have a width of 4
-set tabstop=4        " Tab width
-set nowrap           " Turn off textwrap
-set relativenumber   " Relative line numbers
-
-" Map "jk" and "kj" to "<Esc>"
-inoremap kj <esc>  
-inoremap jk <esc>  
+lua require("config")
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
