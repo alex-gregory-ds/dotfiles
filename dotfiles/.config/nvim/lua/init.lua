@@ -1,0 +1,6 @@
+require('colourschemes')     -- Colourscheme configurations
+require('mappings')          -- Keyboard mappings
+require('nvim-tree-config')  -- Config for nvim-tree
+require('plugins')           -- Package install scripts
+require('settings')          -- General settings
+
