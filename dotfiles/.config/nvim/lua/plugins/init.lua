@@ -18,4 +18,7 @@ return require('packer').startup(function(use)
         -- tag = 'release' -- To use the latest release
     }
 
+    -- For commenting out code
+    use 'tpope/vim-commentary'
+
 end)
