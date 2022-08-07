@@ -48,7 +48,7 @@ syntax on
 "     Plug 'airblade/vim-gitgutter'
 " call plug#end()
 
-colorscheme nightfox
+colorscheme nordfox
 
 " Settings for RST files
 augroup RestructuredText
