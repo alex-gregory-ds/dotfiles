@@ -2,7 +2,7 @@ require('plugins')              -- Package install scripts
 require('gitsigns').setup()     -- Activate gitsigns
 require('nightfox').setup({})   -- Nightfox colourscheme
 
-vim.cmd('colorscheme nightfox')
+vim.cmd('colorscheme nordfox')
 
 vim.opt.wrap = false            -- Turn off textwrap
 vim.opt.mouse = a               -- Enable mouse clicking
