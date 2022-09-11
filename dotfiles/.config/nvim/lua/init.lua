@@ -1,6 +1,6 @@
 require('colourschemes')     -- Colourscheme configurations
-require('gitsigns-config')   -- Config for gitsigns
 require('plugins')           -- Package install scripts
+require('gitsigns').setup()  -- Activate gitsigns
 
 vim.opt.wrap = false            -- Turn off textwrap
 vim.opt.mouse = a               -- Enable mouse clicking
