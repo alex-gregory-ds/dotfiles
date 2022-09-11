@@ -12,6 +12,12 @@ return require('packer').startup(function(use)
         -- tag = 'release' -- To use the latest release
     }
 
+    -- Better syntax highlighting
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+
     -- For commenting out code
     use 'tpope/vim-commentary'
 
