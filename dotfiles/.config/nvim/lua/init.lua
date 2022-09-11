@@ -1,5 +1,4 @@
 require('colourschemes')     -- Colourscheme configurations
-require('mappings')          -- Keyboard mappings
 require('gitsigns-config')   -- Config for gitsigns
 require('plugins')           -- Package install scripts
 
@@ -16,3 +15,8 @@ vim.opt.scrolloff = 5           -- Start scrolling before final line
 vim.api.nvim_set_keymap("i", "jk", "<Esc>", { noremap = true })
 vim.api.nvim_set_keymap("i", "kj", "<Esc>", { noremap = true })
 
+local map = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+
+vim.g.mapleader = ' '
+map('n', '<leader>', '<C-w>', opts)
