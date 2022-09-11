@@ -6,12 +6,6 @@ return require('packer').startup(function(use)
     -- Colourscheme
     use "EdenEast/nightfox.nvim" -- Colourscheme
 
-    -- File explorer
-    use {
-        'kyazdani42/nvim-tree.lua',
-        tag = 'nightly' -- optional, updated every week. (see issue #1193)
-    }
-
     -- Git signs in the gutter
     use {
         'lewis6991/gitsigns.nvim',

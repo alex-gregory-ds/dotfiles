@@ -50,8 +50,6 @@ else
     "     Plug 'airblade/vim-gitgutter'
     " call plug#end()
 
-    colorscheme nordfox
-    
     " Settings for RST files
     augroup RestructuredText
         autocmd!
