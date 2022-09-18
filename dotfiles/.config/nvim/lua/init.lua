@@ -12,6 +12,7 @@ vim.opt.expandtab = true        -- Expand tabs into spaces
 vim.opt.shiftwidth = 4          -- Indents will have a width of 4
 vim.opt.relativenumber = true   -- Relative line numbers
 vim.opt.scrolloff = 5           -- Start scrolling before final line
+vim.opt.signcolumn = "yes"      -- Always show gutter column
 
 -- Map "jk" and "kj" to "<Esc>"
 vim.api.nvim_set_keymap("i", "jk", "<Esc>", { noremap = true })
