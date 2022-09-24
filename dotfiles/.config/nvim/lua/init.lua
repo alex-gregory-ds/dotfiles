@@ -24,6 +24,10 @@ local opts = { noremap = true, silent = true }
 vim.g.mapleader = ' '
 map('n', '<leader>', '<C-w>', opts)
 
+-- Resize splits
+map('n', '<leader>s', ':vertical resize +10 <cr>', opts)
+map('n', '<leader>a', ':vertical resize -10 <cr>', opts)
+
 -- Treesitter config
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
