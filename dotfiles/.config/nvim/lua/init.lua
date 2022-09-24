@@ -28,6 +28,9 @@ map('n', '<leader>', '<C-w>', opts)
 map('n', '<leader>s', ':vertical resize +10 <cr>', opts)
 map('n', '<leader>a', ':vertical resize -10 <cr>', opts)
 
+-- Open file explorer
+map('n', '<leader>e', ':e . <cr>', opts)
+
 -- Treesitter config
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
