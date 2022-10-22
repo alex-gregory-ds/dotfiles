@@ -25,7 +25,8 @@ vim.g.mapleader = ' '
 map('n', '<leader>', '<C-w>', opts)
 
 -- Open file explorer
-map('n', '<leader>e', ':e . <cr>', opts)
+map('n', '<leader>e', ':E <cr>', opts)    -- Open explorer in dir of current file
+map('n', '<leader>E', ':e . <cr>', opts)  -- Open explorer in root dir
 
 -- Treesitter config
 require'nvim-treesitter.configs'.setup {
