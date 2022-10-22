@@ -24,10 +24,6 @@ local opts = { noremap = true, silent = true }
 vim.g.mapleader = ' '
 map('n', '<leader>', '<C-w>', opts)
 
--- Resize splits
-map('n', '<leader>s', ':vertical resize +10 <cr>', opts)
-map('n', '<leader>a', ':vertical resize -10 <cr>', opts)
-
 -- Open file explorer
 map('n', '<leader>e', ':e . <cr>', opts)
 
