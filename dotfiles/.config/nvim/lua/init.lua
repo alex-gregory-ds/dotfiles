@@ -9,7 +9,6 @@ vim.opt.expandtab = true        -- Expand tabs into spaces
 vim.opt.shiftwidth = 4          -- Indents will have a width of 4
 vim.opt.relativenumber = true   -- Relative line numbers
 vim.opt.scrolloff = 5           -- Start scrolling before final line
-vim.opt.signcolumn = "yes"      -- Always show gutter column
 vim.opt.cursorline = true       -- Highlight current line
 
 -- Map "jk" and "kj" to "<Esc>"
@@ -25,6 +24,14 @@ map('n', '<leader>', '<C-w>', opts)
 -- Open file explorer
 map('n', '<leader>e', ':E <cr>', opts)    -- Open explorer in dir of current file
 map('n', '<leader>E', ':e . <cr>', opts)  -- Open explorer in root dir
+
+if vim.opt.diff:get() then
+    -- Turn of sign column in diff mode, this prevents diff gutter signs from the plugin
+    -- gitsigns.nvim from showing
+    vim.opt.signcolumn = "no"
+else
+    vim.opt.signcolumn = "yes"
+end
 
 -- Treesitter config
 require'nvim-treesitter.configs'.setup {
