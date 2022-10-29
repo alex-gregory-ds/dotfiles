@@ -4,7 +4,16 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     -- Colourscheme
-    use "EdenEast/nightfox.nvim" -- Colourscheme
+    use {
+        "catppuccin/nvim",
+        as = "catppuccin",
+        config = function()
+            require("catppuccin").setup {
+                flavour = "macchiato" -- mocha, macchiato, frappe, latte
+            }
+            vim.api.nvim_command "colorscheme catppuccin"
+        end
+    }
 
     -- Git signs in the gutter
     use {
