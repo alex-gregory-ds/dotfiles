@@ -1,25 +1,21 @@
-if exists('g:vscode')
-    " Use an empty init.vim for vscode-neovim extension.
-else
+let g:pyindent_open_paren = 'shiftwidth()'
+lua require "init"
 
-    let g:pyindent_open_paren = 'shiftwidth()'
-    lua require "init"
+autocmd FileType gitcommit setlocal spell  " Enable spell check in commit messages
+autocmd FileType markdown setlocal spell  " Enable spell check in markdown files
+autocmd FileType rst setlocal spell  " Enable spell check in restructured text files
 
-    autocmd FileType gitcommit setlocal spell  " Enable spell check in commit messages
-    autocmd FileType markdown setlocal spell  " Enable spell check in markdown files
-    autocmd FileType rst setlocal spell  " Enable spell check in restructured text files
+syntax on
 
-    syntax on
+" Settings for RST files
+augroup RestructuredText
+    autocmd!
+    autocmd Filetype rst set wrap linebreak  " Text wrapping
+    autocmd Filetype rst nnoremap <buffer> j gj
+    autocmd Filetype rst nnoremap <buffer> k gk
 
-    " Settings for RST files
-    augroup RestructuredText
-        autocmd!
-        autocmd Filetype rst set wrap linebreak  " Text wrapping
-        autocmd Filetype rst nnoremap <buffer> j gj
-        autocmd Filetype rst nnoremap <buffer> k gk
+    " Text wrap lists with indent. See https://vi.stackexchange.com/questions/14932/the-indent-of-wrapped-lines
+    autocmd Filetype rst set breakindent breakindentopt=sbr,list:-1 linebreak
+    autocmd Filetype rst let &formatlistpat = '^\s*-\s*'  " Treat lines beginning with '- ' as a list.
+augroup END
 
-        " Text wrap lists with indent. See https://vi.stackexchange.com/questions/14932/the-indent-of-wrapped-lines
-        autocmd Filetype rst set breakindent breakindentopt=sbr,list:-1 linebreak
-        autocmd Filetype rst let &formatlistpat = '^\s*-\s*'  " Treat lines beginning with '- ' as a list.
-    augroup END
-endif
