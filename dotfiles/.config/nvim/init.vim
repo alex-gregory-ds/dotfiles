@@ -1,6 +1,8 @@
 if exists('g:vscode')
     " Use an empty init.vim for vscode-neovim extension.
 else
+
+    let g:pyindent_open_paren = 'shiftwidth()'
     lua require "init"
 
     autocmd FileType gitcommit setlocal spell  " Enable spell check in commit messages
