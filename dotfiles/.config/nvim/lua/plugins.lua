@@ -1,4 +1,4 @@
-return require('packer').startup(function(use)
+ return require('packer').startup(function(use)
 
     -- Package manager
     use 'wbthomason/packer.nvim'
@@ -18,8 +18,10 @@ return require('packer').startup(function(use)
     -- Git signs in the gutter
     use {
         'lewis6991/gitsigns.nvim',
-        -- tag = 'release' -- To use the latest release
-    }
+        config = function()
+            require('gitsigns').setup()
+        end
+    }	
 
     -- Better syntax highlighting
     use {
