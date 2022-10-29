@@ -1,5 +1,3 @@
--- require('gitsigns').setup()     -- Activate gitsigns
-
 vim.opt.wrap = false            -- Turn off textwrap
 vim.opt.mouse = a               -- Enable mouse clicking
 vim.opt.number = true           -- Line numbers
