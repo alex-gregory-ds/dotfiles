@@ -2,6 +2,7 @@ lua require "init"
 lua require "plugins"
 lua require "lsp"
 lua require "treesitter"
+lua require "completion"
 
 let g:pyindent_open_paren = 'shiftwidth()'
 
