@@ -1,5 +1,10 @@
-let g:pyindent_open_paren = 'shiftwidth()'
 lua require "init"
+lua require "plugins"
+lua require "lsp"
+lua require "treesitter"
+lua require "completion"
+
+let g:pyindent_open_paren = 'shiftwidth()'
 
 autocmd FileType gitcommit setlocal spell  " Enable spell check in commit messages
 autocmd FileType markdown setlocal spell  " Enable spell check in markdown files

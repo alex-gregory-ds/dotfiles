@@ -1,4 +1,4 @@
-return require('packer').startup(function(use)
+ return require('packer').startup(function(use)
 
     -- Package manager
     use 'wbthomason/packer.nvim'
@@ -18,8 +18,10 @@ return require('packer').startup(function(use)
     -- Git signs in the gutter
     use {
         'lewis6991/gitsigns.nvim',
-        -- tag = 'release' -- To use the latest release
-    }
+        config = function()
+            require('gitsigns').setup()
+        end
+    }	
 
     -- Better syntax highlighting
     use {
@@ -32,5 +34,14 @@ return require('packer').startup(function(use)
 
     -- Language server protocal config
     use 'neovim/nvim-lspconfig'
+
+    -- Packages for autocompletion
+    use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+
+    use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
+
+    use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
+
+    use 'L3MON4D3/LuaSnip' -- Snippets plugin
 
 end)
