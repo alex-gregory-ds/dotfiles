@@ -19,11 +19,12 @@
 
 [core]
 	editor = nvim
-	pager = 
+	pager = nvim -R
 
 [color]
 	ui = true
     status = always
+	pager = no
 
 [difftool]
     prompt = true
@@ -38,7 +39,8 @@
 	new = green normal bold
 
 [pager]
-	branch = false
-    show = false
-    log = false
+	branch = true
+    show = true
+    log = true
+    lo = false
 
