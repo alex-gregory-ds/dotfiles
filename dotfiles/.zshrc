@@ -11,6 +11,9 @@ zstyle :compinstall filename '/home/alex/.zshrc'
 autoload -Uz compinit
 compinit
 
+# Case insensitive completion
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+
 alias ls='ls --color'             # Always enable colors for ls
 alias grep='grep --color=always'  # Always enable colors for grep
 
