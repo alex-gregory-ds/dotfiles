@@ -6,10 +6,6 @@ lua require "treesitter"
 
 let g:pyindent_open_paren = 'shiftwidth()'
 
-autocmd FileType gitcommit setlocal spell  " Enable spell check in commit messages
-autocmd FileType markdown setlocal spell  " Enable spell check in markdown files
-autocmd FileType rst setlocal spell  " Enable spell check in restructured text files
-
 syntax on
 
 " Settings for RST files

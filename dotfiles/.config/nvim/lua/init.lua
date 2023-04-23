@@ -7,6 +7,7 @@ vim.opt.shiftwidth = 4          -- Indents will have a width of 4
 vim.opt.relativenumber = true   -- Relative line numbers
 vim.opt.scrolloff = 5           -- Start scrolling before final line
 vim.opt.cursorline = true       -- Highlight current line
+vim.opt.indentexpr = ""
 
 -- Map "jk" and "kj" to "<Esc>"
 vim.api.nvim_set_keymap("i", "jk", "<Esc>", { noremap = true })
@@ -30,3 +31,8 @@ else
     vim.opt.signcolumn = "yes"
 end
 
+-- Enable spell checking
+vim.api.nvim_create_autocmd(
+    "FileType",
+    { pattern = { "gitcommit", "markdown", "rst" }, command = "setlocal spell" }
+)
