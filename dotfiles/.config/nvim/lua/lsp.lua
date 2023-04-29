@@ -39,5 +39,6 @@ local lsp_flags = {
 
 require'lspconfig'.pyright.setup{}
 
--- vim.g.pyindent_open_paren = 'shiftwidth()'
+vim.g.pyindent_open_paren = 'shiftwidth()'
+vim.g.python_recommend_style = 0
 
