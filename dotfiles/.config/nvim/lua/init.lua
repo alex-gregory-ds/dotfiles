@@ -31,8 +31,3 @@ else
     vim.opt.signcolumn = "yes"
 end
 
--- Enable spell checking
-vim.api.nvim_create_autocmd(
-    "FileType",
-    { pattern = { "gitcommit", "markdown", "rst" }, command = "setlocal spell" }
-)
