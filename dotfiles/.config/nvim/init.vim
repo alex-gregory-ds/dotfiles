@@ -1,5 +1,5 @@
 lua require "init"
-lua require "plugins"
+lua require "packer_config"
 " lua require "lsp"
 lua require "treesitter"
 " lua require "completion"
