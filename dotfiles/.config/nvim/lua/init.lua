@@ -9,10 +9,6 @@ vim.opt.scrolloff = 5           -- Start scrolling before final line
 vim.opt.cursorline = true       -- Highlight current line
 vim.opt.indentexpr = ""
 
--- Map "jk" and "kj" to "<Esc>"
-vim.api.nvim_set_keymap("i", "jk", "<Esc>", { noremap = true })
-vim.api.nvim_set_keymap("i", "kj", "<Esc>", { noremap = true })
-
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
