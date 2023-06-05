@@ -29,6 +29,14 @@ function parse_current_git_branch() {
     fi
 }
 
+function vm() {
+    if [ ! -d "${HOME}/mytrash" ]; then
+        echo "${HOME}/mytrash folder does not exits."
+    else
+        mv --verbose --interactive --no-clobber --target-directory="${HOME}/mytrash" "$@" 
+    fi
+}
+
 setopt PROMPT_SUBST
 PROMPT='%F{green}%n@%m%f:%F{cyan}%1~%f $(parse_current_git_branch)%F{green}$ %f'
 
