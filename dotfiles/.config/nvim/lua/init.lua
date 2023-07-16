@@ -9,6 +9,8 @@ vim.opt.scrolloff = 5           -- Start scrolling before final line
 vim.opt.cursorline = true       -- Highlight current line
 vim.opt.indentexpr = ""
 
+vim.api.nvim_command "colorscheme habamax"
+
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
