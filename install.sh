@@ -1,4 +1,4 @@
 SOURCE_DIR="${HOME}/dotfiles/dotfiles/."
 
-cp -rsf ${SOURCE_DIR} ~
+cp --recursive --symbolic-link --interactive ${SOURCE_DIR} ${HOME}
 
