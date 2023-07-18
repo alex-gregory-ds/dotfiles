@@ -29,3 +29,8 @@ else
     vim.opt.signcolumn = "yes"
 end
 
+-- Fuzzy file finding without plugins
+vim.opt.path = vim.opt.path + "**"
+vim.opt.wildmenu = true
+vim.opt.wildignore = vim.opt.wildignore + "**/.git/*"
+
