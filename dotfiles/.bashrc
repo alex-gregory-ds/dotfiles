@@ -21,5 +21,5 @@ function vm() {
     fi
 }
 
-PS1='\e[0;32m\u@\H\e[0m:\e[0;36m\w\e[0m$(parse_current_git_branch)$ '
+PS1="\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]$(parse_current_git_branch)\\$ "
 
