@@ -1,34 +1,18 @@
 [alias]
-    st = status -s  # Concise status
+    st = status --short  # Concise status
     dt = difftool
 [user]
 	email = alex.gregory1@outlook.com
 	name = Alex Gregory
-
 [core]
 	editor = nvim
 	pager = nvim -R
-
 [color]
 	ui = true
-    status = always
-	pager = no
-
+	pager = no  # Neovim should handle the colours
 [difftool]
-    prompt = true
-
+    prompt = yes
 [diff]
     tool = nvimdiff
-
 [difftool "nvimdiff"]
-    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
-
-[color "diff"]
-	new = green normal bold
-
-[pager]
-	branch = true
-    show = true
-    log = true
-    lo = false
-
+    cmd = nvim -d "$LOCAL" "$REMOTE"
