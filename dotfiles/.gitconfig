@@ -1,18 +1,6 @@
 [alias]
-    # Concise log
-    lo = log --pretty='%C(yellow)%h%Creset - %s %Cgreen[%ar]%Creset' --reverse -n 10
-
-    # Concise status
-    st = status -s
-
-    # List modified files
-    sh = show --name-status
-
-    # Diff to show the contents of a commit
-    dtc = "!f() { git difftool \"$1^\" \"$1\"; }; f"
-
+    st = status -s  # Concise status
     dt = difftool
-
 [user]
 	email = alex.gregory1@outlook.com
 	name = Alex Gregory
