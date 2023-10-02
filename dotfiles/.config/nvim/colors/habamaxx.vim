@@ -253,13 +253,13 @@ if s:t_Co >= 256
   hi Conceal ctermfg=243 ctermbg=NONE cterm=NONE
   hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Debug ctermfg=66 ctermbg=NONE cterm=NONE
-  hi DiffAdd ctermfg=253 ctermbg=65 cterm=NONE
+  hi DiffAdd ctermfg=NONE ctermbg=17 cterm=NONE
   hi DiffDelete ctermfg=137 ctermbg=NONE cterm=NONE
   hi diffAdded ctermfg=108 ctermbg=NONE cterm=NONE
   hi diffRemoved ctermfg=167 ctermbg=NONE cterm=NONE
   hi diffSubname ctermfg=139 ctermbg=NONE cterm=NONE
-  hi DiffText ctermfg=253 ctermbg=102 cterm=NONE
-  hi DiffChange ctermfg=250 ctermbg=59 cterm=NONE
+  hi DiffText ctermfg=NONE ctermbg=52 cterm=NONE
+  hi DiffChange ctermfg=NONE ctermbg=236 cterm=NONE
   unlet s:t_Co
   finish
 endif
