@@ -258,7 +258,7 @@ if s:t_Co >= 256
   hi diffAdded ctermfg=108 ctermbg=NONE cterm=NONE
   hi diffRemoved ctermfg=167 ctermbg=NONE cterm=NONE
   hi diffSubname ctermfg=139 ctermbg=NONE cterm=NONE
-  hi DiffText ctermfg=NONE ctermbg=52 cterm=NONE
+  hi DiffText ctermfg=NONE ctermbg=53 cterm=NONE
   hi DiffChange ctermfg=NONE ctermbg=236 cterm=NONE
   unlet s:t_Co
   finish
