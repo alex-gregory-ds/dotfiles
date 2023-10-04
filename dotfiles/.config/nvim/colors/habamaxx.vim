@@ -209,7 +209,7 @@ if s:t_Co >= 256
   hi EndOfBuffer ctermfg=240 ctermbg=NONE cterm=NONE
   hi SpecialKey ctermfg=240 ctermbg=NONE cterm=NONE
   hi FoldColumn ctermfg=240 ctermbg=NONE cterm=NONE
-  hi Visual ctermfg=234 ctermbg=109 cterm=NONE
+  hi Visual ctermfg=NONE ctermbg=NONE cterm=reverse
   hi VisualNOS ctermfg=234 ctermbg=66 cterm=NONE
   hi Pmenu ctermfg=NONE ctermbg=237 cterm=NONE
   hi PmenuThumb ctermfg=NONE ctermbg=243 cterm=NONE
