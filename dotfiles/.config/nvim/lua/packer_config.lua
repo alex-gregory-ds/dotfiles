@@ -16,18 +16,18 @@
     -- }
 
     -- Git signs in the gutter
-    use {
-        'lewis6991/gitsigns.nvim',
-        config = function()
-            require('gitsigns').setup()
-        end
-    }	
+    -- use {
+    --     'lewis6991/gitsigns.nvim',
+    --     config = function()
+    --         require('gitsigns').setup()
+    --     end
+    -- }	
 
     -- Better syntax highlighting
-    use {
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
-    }
+    -- use {
+    --     'nvim-treesitter/nvim-treesitter',
+    --     run = ':TSUpdate'
+    -- }
 
     -- For commenting out code
     use 'tpope/vim-commentary'
