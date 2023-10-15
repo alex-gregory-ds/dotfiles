@@ -21,14 +21,6 @@ map('n', '<leader>', '<C-w>', opts)
 map('n', '<leader>e', ':E <cr>', opts)    -- Open explorer in dir of current file
 map('n', '<leader>E', ':e . <cr>', opts)  -- Open explorer in root dir
 
-if vim.opt.diff:get() then
-    -- Turn of sign column in diff mode, this prevents diff gutter signs from the plugin
-    -- gitsigns.nvim from showing
-    vim.opt.signcolumn = "no"
-else
-    vim.opt.signcolumn = "yes"
-end
-
 -- Fuzzy file finding without plugins
 vim.opt.path = vim.opt.path + "**"
 vim.opt.wildmenu = true
