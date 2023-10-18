@@ -30,7 +30,7 @@
     -- }
 
     -- For commenting out code
-    use 'tpope/vim-commentary'
+    -- use 'tpope/vim-commentary'
 
     -- Language server protocal config
     -- use 'neovim/nvim-lspconfig'
