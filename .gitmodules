@@ -1,0 +1,3 @@
+[submodule "dotfiles/.config/nvim/pack/packages/start/commentary"]
+	path = dotfiles/.config/nvim/pack/packages/start/commentary
+	url = https://github.com/tpope/vim-commentary.git
