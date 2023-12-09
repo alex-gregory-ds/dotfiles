@@ -1,6 +1,6 @@
 # Dotfiles
 
-A collection of my dotfiles.
+My dotfiles.
 
 ## Install
 
