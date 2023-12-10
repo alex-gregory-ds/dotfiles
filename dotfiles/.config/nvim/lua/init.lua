@@ -8,6 +8,7 @@ vim.opt.relativenumber = true   -- Relative line numbers
 vim.opt.scrolloff = 5           -- Start scrolling before final line
 vim.opt.cursorline = true       -- Highlight current line
 vim.opt.indentexpr = ""
+vim.opt.termguicolors = true
 
 vim.api.nvim_command "colorscheme habamax"
 
@@ -18,8 +19,8 @@ vim.g.mapleader = ' '
 map('n', '<leader>', '<C-w>', opts)
 
 -- Open file explorer
-map('n', '<leader>e', ':E <cr>', opts)    -- Open explorer in dir of current file
-map('n', '<leader>E', ':e . <cr>', opts)  -- Open explorer in root dir
+map('n', '<leader>e', ':Explore <cr>', opts)     -- Open explorer in dir of current file
+map('n', '<leader>E', ':explore . <cr>', opts)  -- Open explorer in root dir
 
 -- Fuzzy file finding without plugins
 vim.opt.path = vim.opt.path + "**"
