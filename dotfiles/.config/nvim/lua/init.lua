@@ -4,6 +4,7 @@ vim.opt.tabstop = 4             -- Tab width
 vim.opt.expandtab = true        -- Expand tabs into spaces
 vim.opt.shiftwidth = 4          -- Indents will have a width of 4
 vim.opt.relativenumber = true   -- Relative line numbers
+vim.opt.number = true           -- Show current line number
 vim.opt.scrolloff = 5           -- Start scrolling before final line
 vim.opt.cursorline = true       -- Highlight current line
 vim.opt.indentexpr = ""
