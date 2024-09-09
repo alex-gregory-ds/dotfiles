@@ -11,7 +11,7 @@ vim.opt.indentexpr = ""
 vim.opt.termguicolors = true
 vim.opt.background = "light"
 
-vim.api.nvim_command "colorscheme base16-classic-light"
+vim.api.nvim_command "colorscheme default-extended"
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
