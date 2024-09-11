@@ -36,18 +36,18 @@ let s:gui08        = "A83124"  " Red
 let g:base16_gui08 = "A83124"  " Red
 let s:gui09        = "498363"  " Light green
 let g:base16_gui09 = "498363"  " Light green
-let s:gui0A        = "5B523E"  " Brown
-let g:base16_gui0A = "5B523E"  " Brown
+let s:gui0A        = "9F5694"  " Light purple
+let g:base16_gui0A = "9F5694"  " Light purple
 let s:gui0B        = "176237"  " Green
 let g:base16_gui0B = "176237"  " Green
 let s:gui0C        = "1A6B93"  " Light blue
 let g:base16_gui0C = "1A6B93"  " Light blue
 let s:gui0D        = "004C73"  " Dark blue
 let g:base16_gui0D = "004C73"  " Dark blue
-let s:gui0E        = "85477C"  " Purple
-let g:base16_gui0E = "85477C"  " Purple
-let s:gui0F        = "5B523E"  " Brown
-let g:base16_gui0F = "5B523E"  " Brown
+let s:gui0E        = "9F5694"  " Purple
+let g:base16_gui0E = "9F5694"  " Purple
+let s:gui0F        = "AD67A2"  " Light purple
+let g:base16_gui0F = "AD67A2"  " Light purple
 
 " Diff colors
 let s:gui0G        = "C8DAC9"  " Diff add
