@@ -1,0 +1,12 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "editor.cursorBlinking": "solid",
+    "workbench.colorTheme": "Quiet Light",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<space>"],
+            "after": ["ctrl+w"]
+        }
+    ]
+}
