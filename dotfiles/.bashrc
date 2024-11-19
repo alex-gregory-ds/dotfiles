@@ -7,7 +7,8 @@ alias ls='ls --color'             # Always enable colors for ls
 alias grep='grep --color=always'  # Always enable colors for grep
 
 function parse_current_git_branch() {
-    CURRENT_BRANCH="$(git --no-pager branch --show-current --quiet 2> /dev/null)"
+    local CURRENT_BRANCH
+    CURRENT_BRANCH="$(git branch --show-current --quiet 2> /dev/null)"
     if [ $? = 0 ]; then
         echo "(${CURRENT_BRANCH})"
     fi
