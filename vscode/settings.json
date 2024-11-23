@@ -8,5 +8,8 @@
             "before": ["<space>"],
             "after": ["ctrl+w"]
         }
-    ]
+    ],
+    "vim.handleKeys": {
+        "<C-p>": false
+    }
 }
