@@ -6,7 +6,7 @@
     },
     {
         "key": "ctrl+j",
-        "command": "workbench.action.quickOpenSelectPrevious",
+        "command": "workbench.action.quickOpenSelectNext",
         "when": "inQuickOpen"
     }
 ]
