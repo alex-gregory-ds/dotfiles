@@ -2,14 +2,14 @@
     st = status --short  # Concise status
     dt = difftool
 [user]
-	email = alex.gregory1@outlook.com
-	name = Alex Gregory
+    email = alex.gregory1@outlook.com
+    name = Alex Gregory
 [core]
-	editor = nvim
-	pager = nvim -R
+    editor = nvim
+    pager = nvim -R
 [color]
-	ui = true
-	pager = no  # Neovim should handle the colours
+    ui = true
+    pager = no  # Neovim should handle the colours
 [difftool]
     prompt = yes
 [diff]
