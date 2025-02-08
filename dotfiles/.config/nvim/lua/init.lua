@@ -8,9 +8,9 @@ vim.opt.scrolloff = 5           -- Start scrolling before final line
 vim.opt.cursorline = true       -- Highlight current line
 vim.opt.indentexpr = ""
 vim.opt.termguicolors = true
-vim.opt.background = "light"
+vim.opt.background = "dark"
 
-vim.api.nvim_command "colorscheme default-extended"
+vim.api.nvim_command "colorscheme slate"
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
