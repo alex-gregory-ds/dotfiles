@@ -11,22 +11,23 @@ vim.opt.termguicolors = true
 vim.opt.background = "dark"
 vim.opt.clipboard = "unnamedplus"  -- Enable copying from nvim to system clipboard
 
+-- Fuzzy file finding without plugins
+vim.opt.path = vim.opt.path + "**"
+vim.opt.wildmenu = true
+vim.opt.wildignore = vim.opt.wildignore + "**/.git/*"
+
+vim.g.mapleader = ' '
 vim.api.nvim_command "colorscheme slate"
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
-vim.g.mapleader = ' '
+-- Remap ctrl + w to leader key
 map('n', '<leader>', '<C-w>', opts)
 
 -- Open file explorer
 map('n', '<leader>e', ':Explore <cr>', opts)     -- Open explorer in dir of current file
 map('n', '<leader>E', ':explore . <cr>', opts)  -- Open explorer in root dir
-
--- Fuzzy file finding without plugins
-vim.opt.path = vim.opt.path + "**"
-vim.opt.wildmenu = true
-vim.opt.wildignore = vim.opt.wildignore + "**/.git/*"
 
 -- Quickly open a todo list
 map('n', '<leader>t', ':e ~/notes/todo.md <cr>', opts)
