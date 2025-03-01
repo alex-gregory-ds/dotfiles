@@ -9,6 +9,7 @@ vim.opt.cursorline = true       -- Highlight current line
 vim.opt.indentexpr = ""
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
+vim.opt.clipboard = "unnamedplus"  -- Enable copying from nvim to system clipboard
 
 vim.api.nvim_command "colorscheme slate"
 
