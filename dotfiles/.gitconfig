@@ -10,8 +10,6 @@
 [color]
     ui = true
     pager = no  # Neovim should handle the colours
-[difftool]
-    prompt = yes
 [diff]
     tool = nvimdiff
 [difftool "nvimdiff"]
