@@ -9,6 +9,7 @@
             "after": ["ctrl+w"]
         }
     ],
+    "vim.useSystemClipboard": true,
     "vim.handleKeys": {
         "<C-p>": false
     }
