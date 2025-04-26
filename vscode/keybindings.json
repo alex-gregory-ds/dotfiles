@@ -15,7 +15,7 @@
         "when": "inQuickOpen"
     },
     {
-        "key": "ctrl+l",
+        "key": "ctrl+h",
         "command": "editor.action.showHover"
     }
 ]
