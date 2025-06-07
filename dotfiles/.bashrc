@@ -27,3 +27,4 @@ PS1='\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\
 alias pdb='PYTHONBREAKPOINT=pdb.set_trace'
 alias pdc='PYTHONBREAKPOINT=pdbcolor.set_trace'
 
+export EDITOR=nvim
