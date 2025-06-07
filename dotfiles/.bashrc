@@ -24,3 +24,6 @@ function vm() {
 
 PS1='\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]$(parse_current_git_branch)\n$ '
 
+alias pdb='PYTHONBREAKPOINT=pdb.set_trace'
+alias pdc='PYTHONBREAKPOINT=pdbcolor.set_trace'
+
