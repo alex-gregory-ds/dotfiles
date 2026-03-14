@@ -8,7 +8,7 @@ vim.opt.scrolloff = 5           -- Start scrolling before final line
 vim.opt.cursorline = true       -- Highlight current line
 vim.opt.indentexpr = ""
 vim.opt.termguicolors = true
-vim.opt.background = "dark"
+vim.opt.background = "light"
 vim.opt.clipboard = "unnamedplus"  -- Enable copying from nvim to system clipboard
 
 -- Fuzzy file finding without plugins
@@ -17,7 +17,7 @@ vim.opt.wildmenu = true
 vim.opt.wildignore = vim.opt.wildignore + "**/.git/*"
 
 vim.g.mapleader = ' '
-vim.api.nvim_command "colorscheme slate"
+vim.api.nvim_command "colorscheme wildcharmm"
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
