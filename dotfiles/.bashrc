@@ -22,9 +22,15 @@ function vm() {
     fi
 }
 
-PS1='\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]$(parse_current_git_branch)\n$ '
+PS1='\n\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]$(parse_current_git_branch)\n$ '
 
 alias pdb='PYTHONBREAKPOINT=pdb.set_trace'
 alias pdc='PYTHONBREAKPOINT=pdbcolor.set_trace'
 
 export EDITOR=nvim
+. "$HOME/.cargo/env"
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+
+export PATH="$HOME/.local/bin:$PATH"
