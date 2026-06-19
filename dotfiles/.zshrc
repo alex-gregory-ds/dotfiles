@@ -38,5 +38,7 @@ function vm() {
 }
 
 setopt PROMPT_SUBST
-PROMPT='\n%F{green}%n@%m%f:%F{cyan}%1~%f$(parse_current_git_branch)%F{green}$ %f\n'
+PROMPT='
+%F{green}%n@%m%f:%F{cyan}%1~%f$(parse_current_git_branch)%F{green}$ %f
+'
 
